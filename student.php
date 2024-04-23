@@ -181,7 +181,8 @@ $conn->close();
                   <a href="portfolio.html">Portfolio</a>
                         <a href="packages.html">Our packages</a>
                         <a href="student.php">Student portal</a>
-                           <a href="blog.php">News/Blog</a>
+                        <a href="blog.php">News/Blog</a>
+                       <a href="contact.html"> Contact Us</a>
     </div>
     <script>
       

@@ -156,5 +156,8 @@ color: white;
  #packages2>div{
     width: auto;
  }
+ #packages{
+   padding: 20px;
+}
 }
 

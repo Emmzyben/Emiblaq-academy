@@ -337,6 +337,10 @@ border-radius: 50px;
     #section{
        flex-direction: column;
     }
+    section{
+        padding-left: 10px;
+        padding-right:10px;
+    }
     #section>div{
         padding: 10px;
     }
