@@ -1,0 +1,273 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Packages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/f0fb58e769.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header id="cover">
+    <div style="background-color: #ffffff;">
+        
+           <div style="display: flex;flex-direction: row;" id="name">
+               <span id="side"><img src="images/logo.jpg" alt="logo"></span>
+                <span id="center">
+                  <h1>EMI<span style="color: #2154cf;">BLAQ</span> TECH SO<span style="color: #2154cf;">LUT</span>IONS</h1>
+                  <p><i class="fa fa-phone-square"></i> +234 (0) 9056897432 <span id="sp"><i class="fa fa-phone-square"></i> +234 (0) 7085082556 </span><span id="sp"><a style="text-decoration: none;color: rgb(98, 108, 132);" href="mailto:support@emiblaqtech.com"><i class="fa fa-share-square-o"></i> support@emiblaqtech.com</a></span></p>
+               </span>
+               <span id="side" style="text-align:right;">
+                   <ul>
+                   <li><a href="register.php">REGISTER NOW!</a></li>
+                   <li><a href="contact.html">CONTACT US</a></li>
+                   </ul>
+               </span>
+           </div>
+          </div>
+</header> 
+
+    
+         <div id="bg">
+             <ul>
+                 <li><a href="index.html">HOME</a></li>
+                     <li><a href="about.html">ABOUT US</a></li> 
+                     <li class="nav-container">
+                        <span id="hoverer">SERVICES</span> 
+                         <ul id="dropdown">
+                          <li><a href="#">Web Design</a></li> 
+                          <li><a href="#">Web development</a></li> 
+                          <li><a href="#">Website maintenance</a></li>
+                          <li><a href="#">Graphic design</a></li>
+                         </ul>
+                       </li>
+                       <li class="nav-container">
+                        <span id="hoverer">ACADEMY COURSES</span> 
+  <ul id="dropdown">
+                              <li><a href="academy.html">Web development<br>(Html,Css,Javascript)</a></li> 
+                              <li><a href="academy.html">Full-stack development<br>(Front-end,Back-end)</a></li> 
+                              <li><a href="academy.html">Graphic design</a></li>
+                             </ul>
+                       </li>
+                      <li><a href="portfolio.html">PORTFOLIO</a></li>
+                      <li><a href="packages.html">OUR PACKAGES</a></li>
+                      <li><a href="student.php">STUDENT PORTAL</a></li> 
+                       <li><a href="blog.php">NEWS/BLOG</a></li>  
+             </ul>
+         </div>
+ 
+
+
+<aside style="z-index: 1;">
+    <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
+   <div onclick="openNav()" >
+      <div class="container" onclick="myFunction(this)" id="sideNav">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+</aside>
+
+  
+
+
+
+<nav>
+<div id="mySidenav" class="sidenav">
+
+  <img src="images/logo.jpg" alt="" id="img"><hr>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a class="dropdown-item" onclick="toggleDropdown()" >
+   Services +
+      <div class="sub-menu1" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+      color: #fff;">
+     <a href="#">Web Design</a>
+      <a href="#">Web development</a>
+      <a href="#">Website maintenance</a>
+      <a href="#">Graphic design</a>
+      </div>
+    </a>
+ 
+    <script>
+      function toggleDropdown() {
+        const subMenu = document.querySelector('.sub-menu1');
+        subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+      }
+    </script>
+<a class="dropdown-item" onclick="toggleDropdown2()">
+Academy Courses +
+  <div class="sub-menu2" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+       color: #fff;">
+   <a href="academy.html">Web development<br>(Html,Css,Javascript)</a>
+   <a href="academy.html">Full-stack development<br>(Front-end,Back-end)</a>
+  <a href="academy.html">Graphic design</a>
+       </div>
+ </a>
+
+ <script>
+   function toggleDropdown2() {
+     const subMenu2 = document.querySelector('.sub-menu2');
+     subMenu2.style.display = (subMenu2.style.display === 'none' || subMenu2.style.display === '') ? 'block' : 'none';
+   }
+ </script>
+
+              <a href="portfolio.html">Portfolio</a>
+                    <a href="packages.html">Our packages</a>
+                    <a href="student.php">Student portal</a>
+                       <a href="blog.php">News/Blog</a>
+</div>
+<script>
+  
+function myFunction(x) {
+x.classList.toggle("change");
+}
+
+var open = false;
+
+function openNav() {
+var sideNav = document.getElementById("mySidenav");
+
+if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+    sideNav.style.width = "250px";
+    open = true;
+} else {
+    sideNav.style.width = "0";
+    open = false;
+}
+}
+</script>
+</nav>
+
+
+<div id="bg1">
+  <div class="bgcover" style="text-align:center;display: flex;align-items: center;justify-content: center;">
+    <div id="slidingDiv" class="hidden"><h2>Our Packages</h2></div>
+    </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var slidingDiv = document.getElementById("slidingDiv");
+
+  // Add a class to display the div and initiate the slide-out animation
+  slidingDiv.classList.remove("hidden");
+
+  // After a short delay, reset the left property to its final position
+  setTimeout(function() {
+      slidingDiv.style.left = "0";
+  }, 10);
+});
+</script>
+
+<div id="packages">
+ <h2 style="color: #2b2d2e;">WEBSITE FOR ALL INDUSTRIES</h2> 
+<p>Have simplicity in mind or need a very fast-loading website? These packages are great for anyone wanting a simple, smart & quick web presence with very low load time, without spending big bucks! Also recommended for small personal/family web sites
+</p>
+</div>
+
+<div id="packages2">
+<div>
+ <h2> Basic</h2>
+<h1>₦70,000</h1>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Responsive Website Design</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Get .com.ng Domain Name Free</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Get Upto 10 Web Pages</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>1-Year Free Web Hosting Inclusive</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Content Management System (CMS)</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Google Map Inclusive</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>1-5 Business Email Address Inclusive</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Delivered within 10 Working Days!</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Renewal Fee of ₦15,000 Yearly</p>
+ <button><a href="contact.html">Get Started Now</a></button>
+</div>
+<div>
+  <h2>Corporate</h2>
+<h1>₦150,000</h1>
+<p><i class="fa-solid fa-arrow-right-long"></i>Responsive Website Design</p> 
+ <p><i class="fa-solid fa-arrow-right-long"></i>Get .com or .com.ng Domain Name</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Get Upto 15 Web Pages</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>1-Year Free Web Hosting Inclusive</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Content Management System (CMS)</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Google Map Inclusive</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>5-10 Business Email Address Inclusive</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Delivered within 15 Working Days!</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Renewal Fee of ₦20,000 Yearly</p>
+ <button><a href="contact.html">Get Started Now</a></button>
+</div>
+<div>
+ <h2>eCommerce</h2> 
+<h1>₦200,000</h1>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Responsive Website Design</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Get .com or .com.ng Domain Name</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Get Upto 15 Web Pages</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>1-Year Hosting with Security (SSL)</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Content Management System (CMS)</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Online Payment Gateway Integration</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Classic product and services banner</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>10 - Business Email Address Inclusive</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Delivered within 20 Working Days!</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Facebook & Twitter Feeds Integration</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>24/7 Live Chat Inclusive</p>
+ <p><i class="fa-solid fa-arrow-right-long"></i>Renewal Fee of ₦50,000 Yearly</p>
+ <button><a href="contact.html">Get Started Now</a></button>
+</div>
+</div>
+
+
+
+<div id="overfoot">
+    <footer>
+  <div style="display: flex;flex-direction: row;">
+    <div><img src="images/logo.jpg" alt="logo" width="80px"></div>
+  <div><h3 style="padding: 10px;color: white;">EMIBLAQ TECH SOLUTIONS</h3></div>
+  </div>
+  <hr>
+  <div id="foot">
+  <div>
+  <h3>ABOUT</h3>
+  <p><a href="about.html">About Us</a></p>
+  <h3>ACADEMY COURSES</h3>
+  <p><a href="#">Web development<br>(Html,Css,Javascript)</a></p> 
+  <p><a href="#">Full-stack development<br>(Front-end,Back-end)</a></p> 
+  <p><a href="#">Graphic design</a></p>
+  </div>
+  
+   <div>
+              <h3>SERVICES</h3>
+              <P><a href="#">Web Design</a></P> 
+              <P><a href="#">Web development</a></P> 
+              <P><a href="#">Website maintenance</a></P>
+              <P><a href="#">Graphic design</a></P>
+            </div>
+  
+  <div>
+  <h3>INFORMATION CENTER</h3>
+  <p><a href="blog.php">News and Blog</a></p>
+  <p><a href="packages.html">Our packages</a></p>
+  <p><a href="portfolio.html">Our Portfolio</a></p>
+  
+  </div>
+  
+  <div>
+    <h3>CONTACT</h3>
+    <p><a style="color: white;text-decoration: none;" href="mailto:support@emiblaqtech.com"><i class="fa fa-share-square-o"></i> support@emiblaqtech.com</a></p>
+    <p><i class="fa fa-phone-square" ></i> +234 (0) 9056897432</p>
+    <p><i class="fa fa-phone-square" ></i> +234 (0) 7085082556</p>
+  </div>
+  </div>
+  <hr>
+  <div style="text-align: center;">
+    <p>©2023  Emiblaq Tech- All rights reserved</p>
+  </div>
+  </footer>
+  </div>
+
+  </body>
+  </html>

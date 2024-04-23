@@ -1,0 +1,513 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Emiblaq Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/f0fb58e769.js" crossorigin="anonymous"></script>
+   <style>
+  .writeup {
+  display: none;
+}
+.writeup>div>p{
+  font-size: x-large;
+  color: white;
+}
+.writeup>div>button{
+  background-color: orangered;
+  padding: 17px;
+  border: none;
+  border-radius: 50px;
+  margin: 20px;
+}
+.writeup>div>button>a{
+  color: #fff;
+  text-decoration: none;
+  font-size: large;
+}
+.active {
+  display: block;
+  animation: fadeInOut 3.5s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+   </style>
+</head>
+
+<body>
+  <div id="body">
+    <header id="cover">
+        <div style="background-color: #ffffff;">
+               <div style="display: flex;flex-direction: row;" id="name">
+                   <span id="side"><img src="images/logo.jpg" alt="logo"  ></span>
+                    <span id="center">
+                      <h1>EMI<span style="color: #2154cf;">BLAQ</span> TECH SO<span style="color: #2154cf;">LUT</span>IONS</h1>
+                      <p><i class="fa fa-phone-square"></i> +234 (0) 9056897432 <span id="sp"><i class="fa fa-phone-square">
+                      </i> +234 (0) 7085082556 </span><span id="sp"><a style="text-decoration: none;color: rgb(98, 108, 132);" href="mailto:support@emiblaqtech.com"><i class="fa fa-share-square-o"></i> support@emiblaqtech.com</a></span></p>
+                   </span>
+                   <span id="side" style="text-align:right;">
+                       <ul>
+                       <li class="change"><a href="register.php">REGISTER NOW!</a></li>
+                       <li><a href="contact.html">CONTACT US</a></li>
+                       </ul>
+                   </span>
+               </div>
+              </div>
+    </header> 
+
+        
+             <div id="bg">
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                         <li><a href="about.html">ABOUT US</a></li> 
+                         <li class="nav-container">
+                            <span id="hoverer">SERVICES</span> 
+                             <ul id="dropdown">
+                              <li><a href="#select">Web Design</a></li> 
+                              <li><a href="#select">Web development</a></li> 
+                              <li><a href="#select">Website maintenance</a></li>
+                              <li><a href="#select">Graphic design</a></li>
+                             </ul>
+                           </li>
+                           <li class="nav-container">
+                            <span id="hoverer">ACADEMY COURSES</span> 
+                             <ul id="dropdown">
+                              <li><a href="academy.html">Web development<br>(Html,Css,Javascript)</a></li> 
+                              <li><a href="academy.html">Full-stack development<br>(Front-end,Back-end)</a></li> 
+                              <li><a href="academy.html">Graphic design</a></li>
+                             </ul>
+                           </li>
+                          <li><a href="portfolio.html">PORTFOLIO</a></li>
+                          <li><a href="packages.html">OUR PACKAGES</a></li>
+                          <li><a href="student.php">STUDENT PORTAL</a></li> 
+                           <li><a href="blog.php">NEWS/BLOG</a></li>  
+                 </ul>
+             </div>
+     
+
+    
+    <aside style="z-index: 1;">
+        <div style="width: 20%;"><img src="images/logo.jpg" alt="logo" ></div>
+       <div onclick="openNav()" >
+          <div class="container" onclick="myFunction(this)" id="sideNav">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+    </aside>
+
+      
+
+
+
+<nav>
+    <div id="mySidenav" class="sidenav">
+      <img src="images/logo.jpg" alt="" id="img"><hr>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a class="dropdown-item" onclick="toggleDropdown()" >
+       Services +
+          <div class="sub-menu1" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+          color: #fff;">
+         <a href="#">Web Design</a>
+          <a href="#">Web development</a>
+          <a href="#">Website maintenance</a>
+          <a href="#">Graphic design</a>
+          </div>
+        </a>
+     
+        <script>
+          function toggleDropdown() {
+            const subMenu = document.querySelector('.sub-menu1');
+            subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+          }
+        </script>
+   <a class="dropdown-item" onclick="toggleDropdown2()">
+   Academy Courses +
+       <div class="sub-menu2" style="display: none;transition: 0.5s;background-color: #d3e4ee;
+       color: #fff;">
+   <a href="academy.html">Web development<br>(Html,Css,Javascript)</a>
+   <a href="academy.html">Full-stack development<br>(Front-end,Back-end)</a>
+  <a href="academy.html">Graphic design</a>
+       </div>
+     </a>
+  
+     <script>
+       function toggleDropdown2() {
+         const subMenu2 = document.querySelector('.sub-menu2');
+         subMenu2.style.display = (subMenu2.style.display === 'none' || subMenu2.style.display === '') ? 'block' : 'none';
+       }
+     </script>
+
+                  <a href="portfolio.html">Portfolio</a>
+                        <a href="packages.html">Our packages</a>
+                        <a href="student.php">Student portal</a>
+                           <a href="blog.php">News/Blog</a>
+    </div>
+    <script>
+      
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+  var open = false;
+
+function openNav() {
+    var sideNav = document.getElementById("mySidenav");
+    
+    if (sideNav.style.width === "0px" || sideNav.style.width === "") {
+        sideNav.style.width = "250px";
+        open = true;
+    } else {
+        sideNav.style.width = "0";
+        open = false;
+    }
+}
+    </script>
+</nav>
+
+  <div class="bgcover1">
+    <div id="writeup-1" class="writeup active">
+      <img src="images/banner4.webp" alt="Learn Practical Skills" width="100%" height="100%">
+      <div id="film">
+<h2 style="color: white;">Learn Practical Skills</h2>
+<p>Get the right training to boost your tech career</p>
+<button><a href="academy.html">Learn more</a></button>
+    </div> 
+  </div>
+
+    
+    <div id="writeup-3" class="writeup">
+      <img src="images/websitem.jpg" alt="Get a Website For You Business" width="100%" height="100%">
+      <div id="film">
+      <h2 style="color: white;">Get a Website For You Business</h2>
+      <p>Lets create a stunning website for your business</p>
+      <button><a href="contact.html">Get In Touch</a></button>
+    </div></div>
+
+
+    <div id="writeup-2" class="writeup">
+      <img src="images/banner2.webp" alt="Free Web Design Bootcamp" width="100%" height="100%">
+      <div id="film">
+      <h2>Web Design Bootcamp</h2>
+      <p>Join our Design masterclass today</p>
+      <button><a href="academy.html">Get Started</a></button>
+    </div></div>
+
+    </div>
+    <script>
+ document.addEventListener("DOMContentLoaded", function(event) { 
+  let currentWriteupIndex = 0;
+  const writeups = document.querySelectorAll('.writeup');
+  
+  function showNextWriteup() {
+    const currentWriteup = writeups[currentWriteupIndex];
+    currentWriteup.classList.remove('active');
+    currentWriteupIndex = (currentWriteupIndex + 1) % writeups.length;
+    const nextWriteup = writeups[currentWriteupIndex];
+    nextWriteup.classList.add('active');
+  }
+
+  setInterval(showNextWriteup, 6000);
+});
+
+    </script>
+
+
+<div >
+<div id="intro">
+  <div id="intro2">
+ <h2 style=" color: rgb(37, 42, 55);">Welcome to Emiblaq Tech Solutions!</h2>  
+ <h1 style="line-height: 50px;color: #1c97e9;">An esteemed digital agency dedicated to tackling your technological challenges with fervor</h1> 
+ <p> We're a digital agency based in Nigeria that's here to help you with all your tech needs. Whether you're looking to improve your website, boost your online presence, or solve any other tech-related challenges, we've got you covered.
+</p>
+
+<p>Think of us as your go-to team for building awesome websites and growing your business online. We've helped lots of businesses just like yours achieve their digital goals, and we're ready to do the same for you. Let's work together to create a website that's not only user-friendly but also helps you reach more customers and increase your profits.
+</p>
+
+<button><a href="contact.html">Get a Quote</a></button>
+</div>
+
+
+  <div ><img src="images/responsive.webp" alt=""></div>
+</div>
+
+<div style=" background-image: url(images/webdesign.png);
+background-position: center;
+background-size: cover;
+background-repeat:no-repeat;">
+  <div class="atag">
+    <h2>WE WORK ON ALL SECTORS</h2> 
+    <h1>From Startups to Giants Organizations</h1>
+   <p> We build engaging and eye-catching websites for clients in different industries all over the world. The varied range of design and development projects are enough to reflect the professionalism and experience we have.<div id="homeServices">
+  </p> 
+ 
+</div>
+</div>
+
+
+<div style="margin-top: 0px;background-color: #2154cf;padding: 10px;">
+  <div id="homeServices">
+
+    <a href="https://nicsconsultlimited.com/" target="_blank">
+      <div class="image-container">
+      <img src="images/Screenshot_20240222-200328_1.jpg" alt="">
+      <div style="padding: 10px;"><h2>Oil & Gas Industry</h2> 
+  </div>
+     
+    </div></a>
+    
+     <a href="https://malheightlogistics.com/" target="_blank"><div class="image-container">
+      <img src="images/Screenshot (2).png" alt="">
+      <div style="padding: 10px ;"> 
+      <h2>Logistics</h2>
+   </div>
+    
+    </div></a>
+    <a href="https://wanderpassagetravels.com" target="_blank"><div class="image-container">
+      <img src="images/website.png" alt="">
+    <div style="padding: 10px;"> <h2>Travel</h2>
+  </div>
+    </div></a>
+    
+   
+    
+    <a href="https://www.grafordcollege.com/" target="_blank"><div class="image-container">
+      <img src="images/Screenshot_20240222-200225_1.jpg" alt="" >
+      <div style="padding: 10px;"><h2>School / Education</h2> 
+    </div>
+     </div></a>
+    </div>
+
+    <button id="more"><a href="portfolio.html">View More Projects</a></button>
+</div></div>
+
+
+<div id="select">
+ <h2 style="font-weight: lighter;"> WHAT WE DO</h2>
+ <h1 style="font-weight: bolder;">Our Services</h1> 
+
+ 
+  <div id="select1">
+  <div style="background-color: #fff;">
+    <i class="fa-regular fa-window-restore"></i>
+   <p>Web development</p>
+  </div>
+  <div>
+    <i class="fa-solid fa-mobile"></i>
+<p>Mobile app development</p>
+  </div>
+  <div>
+    <i class="fa-solid fa-palette"></i>
+<p>Graphic design</p>
+  </div>
+  <div>
+    <i class="fa-solid fa-toolbox"></i>
+<p>Website maintenance</p>
+  </div>
+</div>
+
+
+
+
+<div id="box">
+<div id="inbox1"><img src="images/webdesign.png" alt=""></div>
+<div id="inbox2">
+  <h1>Web Design & Development</h1>
+ <p>Are you looking for the best website design company in Nigeria? Do you know that creating a high-quality, mobile-responsive website that will successfully converts casual visitors into repeat, engaged clients takes more than just installing a simple template? Do you know that Nigeria recorded a total of 111.6 million internet users in December 2018 looking for goods and services? Emiblaq tech offers quality and professional website design and development services for all kind of businesses in Globally.</div>
+</p> 
+</div>
+</div>
+
+
+<div style=" background-image: url(images/webdesign.png);
+background-position: center;
+background-size: cover;
+background-repeat:no-repeat;">
+  <div style="background-color: #2155cfc0;color: white;display: flex;align-items: center;justify-content: center;">
+  <div id="compress">
+    <h2 style="color: white;">Need A Web Design Agency in Port Harcourt?</h2> 
+  <p>If you have a website that was built by someone else, but have lost touch
+     with them, or you would simply like us to take over the website, then that
+      is not a problem. Provided that your site falls within the range of 
+      subjects that we are proper to work on then we will be happy to
+       work with you. We have helped many companies get control of their
+        website when they thought that it was not going to be possible.
+         We can also help you to get your website to the top of the search engines
+          to bring in more customers if you need us to. You can call us on: 09056897432. We look forward to hearing from you.
+</p>
+<button><a href="contact.html">Get in touch</a></button>
+</div> 
+</div>
+</div>
+
+
+<div id="tired">
+  <div style="text-align: center;padding: 20px;">
+    <h2 style="font-weight: lighter;">SEE OUR WEB DESIGN STRATEGY</h2>
+<h1>How We Do It</h1>
+  </div>
+
+  <div id="consult">
+    <div>
+      <i class="fa-regular fa-handshake"></i>
+     <h2>Initial Consultation</h2> 
+<p>This is the first stage where we brainstorm your ideas with you via telephone, email or in person to help us understand what you want on your site.
+   </p> </div>
+
+    <div id="mid">
+      <i class="fa-solid fa-chart-line"></i>
+     <h2>Create Your Design</h2> 
+<p>We swing into action by creating a demo version of your website to try out. You can count on our experience to get a responsive website that works perfectly.
+</p>
+    </div>
+
+    <div>
+      <i class="fa-regular fa-clock"></i>
+    <h2> Launch Your Websute</h2> 
+<p>This is the time to show your site to the world. Once 100% satisfied, we launch your new website and work with you to ensure a smooth transition.
+    </p>
+  </div>
+  </div>
+</div>
+
+
+<div id="enter">
+<div style=" background-image: url(images/webdesign.png);
+background-position: center;
+background-size: cover;
+background-repeat:no-repeat;">
+  <div style="background-color: #2154cfbe;display: flex;align-items: center;justify-content: center;" id="big">
+  <div id="press">
+    <div>
+   <h1 >Why Choose Us</h1> 
+   <h2 style="font-weight: lighter;">We are focused on client success</h2> 
+    <p>With so many web design companies around, it is important to choose the right one the will satisfy your needs. For us, we believe that your website is the foremost identifier of your business or organization. With our wealth of experience, we know what type of website will work best in every unique case
+    </p>
+   <ul>
+   <li>We work with dedication and passion</li> 
+    <li>Right solutions for your business at honest price</li>
+    <li>Timely project delivery and within budget</li>
+    </ul>
+</div> 
+</div>
+</div>
+</div></div>
+
+
+<div id="flag-container">
+  <h1 style="text-align: center;">Our Clients</h1>
+  <div id="flagger">
+    <div class="flag-container-inner"></div>
+  </div>
+  <script>
+    
+const countryFlags = ['images/logo1.png', 'images/logo2.jpg', 'images/logo3.jpg', 'images/logo.png', 'images/Logo.jpeg', 'images/image1.png','images/logo4.png'];
+
+const flagContainerInner = document.querySelector('.flag-container-inner');
+
+function createFlagElement(flagPath) {
+  const flagElement = document.createElement('img');
+  flagElement.src = flagPath;
+  flagElement.classList.add('flag');
+  return flagElement;
+}
+
+// Duplicate the images to ensure seamless rolling effect
+const duplicatedFlags = [...countryFlags, ...countryFlags];
+
+duplicatedFlags.forEach(flagPath => {
+  const flagElement = createFlagElement(flagPath);
+  flagContainerInner.appendChild(flagElement);
+});
+
+let currentPosition = 0;
+const increment = 0.05; // Adjust the increment value for the desired speed
+
+function rollFlags() {
+  currentPosition -= increment;
+  flagContainerInner.style.transform = `translateX(${currentPosition}%)`;
+
+  if (currentPosition <= -100) {
+    currentPosition = 0;
+  }
+
+  requestAnimationFrame(rollFlags);
+}
+
+// Start the animation loop
+rollFlags();
+  </script>
+</div>
+
+
+
+
+<div id="overfoot">
+  <footer>
+<div style="display: flex;flex-direction: row;">
+  <div><img src="images/logo.jpg" alt="logo" width="80px"></div>
+  <div><h3 style="padding: 10px;color: white;">EMIBLAQ TECH SOLUTIONS</h3></div>
+</div>
+<hr>
+<div id="foot">
+<div>
+<h3>ABOUT</h3>
+<p><a href="about.html">About Us</a></p>
+<h3>ACADEMY COURSES</h3>
+<p><a href="#">Web development<br>(Html,Css,Javascript)</a></p> 
+<p><a href="#">Full-stack development<br>(Front-end,Back-end)</a></p> 
+<p><a href="#">Graphic design</a></p>
+</div>
+
+ <div>
+            <h3>SERVICES</h3>
+            <P><a href="#">Web Design</a></P> 
+            <P><a href="#">Web development</a></P> 
+            <P><a href="#">Website maintenance</a></P>
+            <P><a href="#">Graphic design</a></P>
+          </div>
+
+<div>
+<h3>INFORMATION CENTER</h3>
+<p><a href="blog.php">News and Blog</a></p>
+<p><a href="packages.html">Our packages</a></p>
+<p><a href="portfolio.html">Our Portfolio</a></p>
+
+</div>
+
+<div>
+  <h3>CONTACT</h3>
+  <p><a style="color: white;text-decoration: none;" href="mailto:support@emiblaqtech.com"><i class="fa fa-share-square-o"></i> support@emiblaqtech.com</a></p>
+  <p><i class="fa fa-phone-square" ></i> +234 (0) 9056897432</p>
+  <p><i class="fa fa-phone-square" ></i> +234 (0) 7085082556</p>
+</div>
+</div>
+<hr>
+<div style="text-align: center;">
+  <p>©2023  Emiblaq Tech- All rights reserved</p>
+</div>
+</footer>
+</div>
+
+    <script src="javascript.js"></script>
+</div>
+  </body>
+</html>
